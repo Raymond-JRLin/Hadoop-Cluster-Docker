@@ -1,25 +1,25 @@
 ### Nodes Hadoop Cluster
 
-#####1. pull docker image
+##### 1. pull docker image
 
 ```
 sudo docker pull joway/hadoop-cluster
 
 ```
 
-#####2. clone github repository
+##### 2. clone github repository
 
 ```
 git clone https://github.com/joway/hadoop-cluster-docker
 ```
 
-#####3. create hadoop network
+##### 3. create hadoop network
 
 ```
 sudo docker network create --driver=bridge hadoop
 ```
 
-#####4. start container
+##### 4. start container
 
 ```
 cd hadoop-cluster-docker
@@ -37,13 +37,13 @@ root@hadoop-master:~#
 - start 3 containers with 1 master and 2 slaves
 - you will get into the /root directory of hadoop-master container
 
-#####5. start hadoop
+##### 5. start hadoop
 
 ```
 ./start-hadoop.sh
 ```
 
-#####6. run wordcount
+##### 6. run wordcount
 
 ```
 ./run-wordcount.sh
